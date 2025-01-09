@@ -1,7 +1,14 @@
 {
   "name": "Tut Heroku: Node.js",
-  "description": "A barebones Node.js app",
-  "repository": "https://github.com/heroku/node-js-getting-started",
-  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/main/public/node.svg",
-  "keywords": ["node","heroku"]
+  "description": "Node.js app for Heroku",
+  "keywords": ["node","heroku"],
+  "buildpacks": [{
+    "url": "heroku/nodejs"
+  }],
+  "formation": {
+    "web": {
+      "size": "eco"
+    }
+  },
+  "stack": "heroku-22"
 }
